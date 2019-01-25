@@ -1,0 +1,124 @@
+# Project information
+site_name: Documentation
+site_description: Public documentation for Streamroot DNA, Enterprise and Compass
+nav:
+    - Home:
+      - Welcome: index.md
+      - Plugins & SDKs:
+        - Web:
+          - Getting started:
+            - Web compatibilities: plugin-sdk/web/getting-started/compatibilities.md
+            - Debug tools for web: plugin-sdk/web/getting-started/debug-tools.md
+          - Players:
+            - Hls.js: plugin-sdk/web/players/hlsjs.md
+            - Dash.js: plugin-sdk/web/players/dashjs.md
+            - Shaka Player: plugin-sdk/web/players/shaka-player.md
+          - Options and API:
+            - DNA Config:
+              - Overview: plugin-sdk/web/dnaconfig/overview.md
+              - Content ID: plugin-sdk/web/dnaconfig/content-id.md
+              - id: plugin-sdk/web/dnaconfig/id.md
+              - Asynchrosnous loading options: plugin-sdk/web/dnaconfig/loading-options.md
+            - Client API:
+              - Overview: plugin-sdk/web/client-api/overview.md
+              - Statistics API: plugin-sdk/web/client-api/stat-api.md
+        - Android:
+          - Getting started:
+            - Android compatibilities: plugin-sdk/android/getting-started/compatibilities.md
+            - Debug tools for Android: plugin-sdk/android/getting-started/debug-tools.md
+          - Players:
+            - ExoPlayer: plugin-sdk/android/players/exoplayer.md
+            - NexPlayer: plugin-sdk/android/players/nexplayer.md
+          - Options and API:
+            - DNA Config:
+              - Overview: plugin-sdk/android/dnaconfig/overview.md
+              - Content ID: plugin-sdk/android/dnaconfig/content-id.md
+            - Client API:
+              - Overview: plugin-sdk/android/client-api/overview.md
+              - Statistics API: plugin-sdk/android/client-api/stat-api.md
+              - Upload/Download rules API: plugin-sdk/android/client-api/upload-download-rules.md
+        - iOS and tvOS:
+          - Getting started:
+            - iOS and tvOS compatibilities: plugin-sdk/ios/getting-started/compatibilities.md
+            - Debug tools for iOS and tvOS: plugin-sdk/ios/getting-started/debug-tools.md
+          - Players:
+            - AVPlayer: plugin-sdk/ios/players/avplayer.md
+          - Options and API:
+            - DNA Config:
+              - Overview: plugin-sdk/ios/dnaconfig/overview.md
+              - Content ID: plugin-sdk/ios/dnaconfig/content-id.md
+            - Client API:
+              - Overview: plugin-sdk/ios/client-api/overview.md
+              - Statistics API: plugin-sdk/ios/client-api/stat-api.md
+              - Upload/Download rules API: plugin-sdk/ios/client-api/upload-download-rules.md
+      - Licenses & Security:
+        - Domain Names and Bundle IDs: licenses-security/secure-streamrootkey.md
+    - Streamroot DNA:
+      - Introduction: dna/index.md
+      - Configure:
+        - dnaConfig:
+          - Property: dna/configure/dnaconfig/property.md
+        - Properties:
+          - Overview: dna/configure/properties/overview.md
+          - Activation Threshold: dna/configure/properties/activation-threshold.md
+          - Activation Ration: dna/configure/properties/activation-ratio.md
+      - Monitor:
+        - Data visulization: dna/monitor/data-visulization.md
+        - Creating and managing your reports: dna/monitor/reports.md
+      - APIs:
+        - Data API: dna/api/data-api.md
+    - DNA Enterprise:
+      - Introduction: enterprise/index.md
+      - Configure:
+        - dnaConfig:
+          - Property: enterprise/configure/dnaconfig/property.md
+          - Site ID: enterprise/configure/dnaconfig/site-id.md
+        - Properties:
+          - Overview: enterprise/configure/properties/overview.md
+          - Activation Threshold: enterprise/configure/properties/activation-threshold.md
+          - Activation Ration: enterprise/configure/properties/activation-ratio.md
+          - Local Network Only: enterprise/configure/properties/local-network-only.md
+      - Monitor:
+        - Data visulization: enterprise/monitor/data-visulization.md
+        - Creating and managing your reports: enterprise/monitor/reports.md
+      - APIs:
+        - Data API: enterprise/api/data-api.md
+        - Subnet API: enterprise/api/subnet-api.md
+    - Compass:
+      - Introduction: compass/index.md
+      - Configure:
+        - dnaConfig:
+          - Compass Property: compass/configure/dnaconfig/comapss-property.md
+        - CDN Configuration: compass/configure/cdn-configuration.md
+        - Properties:
+          - Overview: compass/configure/properties/overview.md
+          - Data Provider: compass/configure/properties/data-provider.md
+          - Activation Ration: compass/configure/properties/activation-ratio.md
+      - Monitor:
+        - Data visulization: compass/monitor/data-visulization.md
+      - APIs:
+        - Data API: compass/api/data-api.md
+
+# Configuration
+theme:
+  name: 'material'
+  logo: 'images/logo.svg'
+  favicon: 'assets/images/favicon.ico'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  feature:
+    tabs: true
+  highlightjs: true
+  hljs_languages:
+    - kotlin
+    - java
+    - rust
+
+# Extensions
+markdown_extensions:
+  - pymdownx.superfences
+  - markdown.extensions.codehilite:
+      guess_lang: false
+      linenums: true
+  - admonition
